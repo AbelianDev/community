@@ -5,15 +5,17 @@ This is a space for feature requests, bug reports, and general discussion. We’
 
 # 🛠 Contributing
 ### Feature Requests
-Have an idea to improve Abelian? Open a feature request to let us know!
+[Feature Request](https://github.com/AbelianDev/community/issues/new?template=feature_request.md)
 
+Have an idea to improve Abelian? Open a feature request to let us know!\
 When submitting a feature request, please include:
 - Description: What should the feature do, and why is it helpful?
 - Use Case: Examples of how you'd use the feature in your workflow.
 
 ### Bug Reports
-Found a bug? Please help us fix it by reporting an issue.\ Include details such as:
+[Report](https://github.com/AbelianDev/community/issues/new?template=bug_report.md)
 
+Found a bug? Please help us fix it by reporting an issue.\ Include details such as:\
 - Steps to reproduce
 - Expected vs. actual behavior
 - Environment: Browser and OS information.
