@@ -12,16 +12,16 @@ Add the following CSS to your `globals.css` or appropriate stylesheet:
 
 ```css
 @layer utilities {
-  .btn-shadow-primary {  
-      box-shadow: 
-        0 4px 0 0 hsl(var(--shadow-muted)),  /* Main shadow */
-        0 0 0 1px hsl(var(--shadow-muted)); /* Outline shadow */
+  .btn-shadow {  
+    @apply shadow-[0_4px_0_0_hsl(var(--btn-shadow))];
   }
 
-  .btn-shadow-secondary {  
-    box-shadow: 
-      0 4px 0 0 hsl(var(--shadow-primary)),  /* Main shadow */
-      0 0 0 1px hsl(var(--shadow-muted)); /* Outline shadow */
+  .btn-shadow-active {  
+    @apply shadow-[0_2px_0_0_hsl(var(--btn-shadow))];
+  }
+
+  .btn-border-color {
+    border-color: hsl(var(--btn-shadow));
   }
 }
 ```
@@ -36,20 +36,20 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90 btn-shadow-primary",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90",
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground btn-shadow-secondary",
+          "border border-input bg-background hover:bg-accent hover:text-accent-foreground btn-shadow active:btn-shadow-active btn-border-color",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+          "bg-secondary text-secondary-foreground hover:bg-secondary/80 border btn-shadow active:btn-shadow-active btn-border-color",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
       },
       size: {
         default: "h-10 px-4 py-2",
-        sm: "h-9 btn-border-radius px-3",
-        lg: "h-11 btn-border-radius px-8",
+        sm: "h-9 px-3",
+        lg: "h-11 px-8",
         icon: "h-10 w-10",
       },
     },
