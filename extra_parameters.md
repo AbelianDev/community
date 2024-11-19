@@ -80,7 +80,7 @@ Define a utility class for customizable button border radius:
 ```css
 @layer utilities {
   .btn-border-radius {
-    border-radius: var(--btn-border-radius);
+    @apply border rounded-full
   }
 }
 ```
@@ -94,7 +94,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-primary",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         ...
       },
