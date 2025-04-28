@@ -1,5 +1,6 @@
 # Abelian Community
-Welcome to the community repository for Abelian – a lightweight UI builder tailored for developers and product managers. This project aims to streamline UI component building, featuring integrations with component libraries like Shadcn and supporting workflows that prioritize simplicity and speed.
+Welcome to the community repository for Abelian – an IDE built specifically for developers who value creative control and simplicity. 
+Abelian streamlines your workflow by intelligently handling repetitive coding tasks, letting you focus on thoughtful problem solving and building software the way it should be.
 
 This is a space for feature requests, bug reports, and general discussion. We’re excited to build this tool alongside the community, and your feedback will directly shape its development!
 
@@ -18,7 +19,7 @@ When submitting a feature request, please include:
 Found a bug? Please help us fix it by reporting an issue.\ Include details such as:\
 - Steps to reproduce
 - Expected vs. actual behavior
-- Environment: Browser and OS information.
+- Environment: OS information.
 
 ### Discussions
 For broader conversations about Abelian, potential new directions, or questions, head over to our Discussions page.
